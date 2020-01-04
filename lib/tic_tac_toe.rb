@@ -111,5 +111,13 @@ class TicTacToe
     full? && !won?
   end
 
+  # returns true if the board has been won, is a draw, or is full.
+  def over?
+    if won? || draw? || full?
+      return true
+    else
+      return false
+    end
+  end
 
 end
