@@ -52,21 +52,6 @@ class TicTacToe
     end
   end
 
-  # turn method
-  def turn
-    puts "Please enter 1-9:"
-    input = gets.strip
-    index = input_to_index(input)
-    valid = valid_move?(board, index)
-    # check that index is valid
-      if valid == false
-        turn(board)
-      else
-        move(board, index, current_player(board))
-        display_board(board)
-      end
-  end
-
   def turn_count
     # use each to iterate over the elements of the board
     # to check if that element is an X or O and increment counter by 1
@@ -82,6 +67,28 @@ class TicTacToe
     counter
   end
 
+  def current_player
+    if turn_count(@board) % 2 == 0
+        return "X"
+    else
+        return "O"
+    end
+  end
+
+  # turn method
+  def turn
+    puts "Please enter 1-9:"
+    input = gets.strip
+    index = input_to_index(input)
+    valid = valid_move?(board, index)
+    # check that index is valid
+      if valid == false
+        turn(board)
+      else
+        move(board, index, current_player(board))
+        display_board(board)
+      end
+  end
 
 
 end
