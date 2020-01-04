@@ -37,9 +37,9 @@ class TicTacToe
   end
 
   def position_taken?(array, index)
-  if array[index] == " " || array[index] == "" || array[index] == nil
+  if @board[index] == " " || @board[index] == "" || @board[index] == nil
     return false
-  elsif array[index] == "X" || array[index] == "O"
+  elsif @board[index] == "X" || @board[index] == "O"
     return true
   end
 end
