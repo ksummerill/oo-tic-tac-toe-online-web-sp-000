@@ -4,6 +4,7 @@ class TicTacToe
     @board = Array.new(9, " ")
   end
 
+  # class constant for winning combinations
   WIN_COMBINATIONS = [
     [0,1,2],
     [3,4,5],
