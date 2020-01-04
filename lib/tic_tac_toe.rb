@@ -83,7 +83,7 @@ class TicTacToe
     valid = valid_move?(index)
     # check that index is valid
       if valid == false
-        turn(board)
+        turn(@board)
       else
         move(index, current_player)
         display_board
