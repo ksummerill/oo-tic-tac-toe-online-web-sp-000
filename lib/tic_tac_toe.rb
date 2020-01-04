@@ -32,7 +32,7 @@ class TicTacToe
   end
 
   # method to take index of board array and the player's character. Default character to "X".
-  def move(@board, character)
+  def move(index, character)
     @board[index] = character
   end
 
