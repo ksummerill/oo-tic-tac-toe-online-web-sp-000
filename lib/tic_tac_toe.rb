@@ -36,7 +36,7 @@ class TicTacToe
     @board[index] = character
   end
 
-  def position_taken?(array, index)
+  def position_taken?(index)
   if @board[index] == " " || @board[index] == "" || @board[index] == nil
     return false
   elsif @board[index] == "X" || @board[index] == "O"
