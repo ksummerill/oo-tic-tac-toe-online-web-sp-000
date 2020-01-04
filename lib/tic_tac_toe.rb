@@ -26,7 +26,7 @@ class TicTacToe
   end
 
   # method to translate user input into board array index
-  def input_to_index
+  def input_to_index(input)
     # convert input to integer and subtracts 1
     input.to_i - 1
   end
