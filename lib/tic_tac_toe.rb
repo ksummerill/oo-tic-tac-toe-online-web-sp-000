@@ -108,7 +108,7 @@ class TicTacToe
   end
 
   def draw?
-    @board.full? && !won?
+    full? && !won?
   end
 
 
