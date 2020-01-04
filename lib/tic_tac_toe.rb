@@ -25,7 +25,11 @@ class TicTacToe
     puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
   end
 
-
+  # method to translate user input into board array index
+  def input_to_index
+    # convert input to integer and subtracts 1
+    input.to_i - 1
+  end
 
 
 
