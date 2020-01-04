@@ -120,4 +120,11 @@ class TicTacToe
     end
   end
 
+  # return the token, "X" or "O" that has won the game given a winning board
+  def winner
+    if won?
+      return won?
+    end
+  end
+
 end
