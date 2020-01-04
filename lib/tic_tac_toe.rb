@@ -123,7 +123,7 @@ class TicTacToe
   # return the token, "X" or "O" that has won the game given a winning board
   def winner
     if won?
-      return @board[won?(@board)[0]]
+      return @board[won?[0]]
     end
   end
 
